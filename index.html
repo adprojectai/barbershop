@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>P:K Men's Salon · 피케이맨즈살롱</title>
+  <meta name="description" content="여주 천송동 남성 헤어 전문 바버샵 피케이맨즈살롱. 커트, 다운펌, 두피 클리닉. 100% 예약제.">
+  <meta name="theme-color" content="#0e0c0a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230e0c0a'/%3E%3Cg fill='none' stroke='%23c9a45c' stroke-width='3.5' stroke-linecap='round'%3E%3Ccircle cx='20' cy='46' r='7'/%3E%3Ccircle cx='44' cy='46' r='7'/%3E%3Cpath d='M24.5 40.5 47 10M39.5 40.5 17 10'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Reusable SVG symbols -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-scissors" viewBox="0 0 64 64">
+      <g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="20" cy="46" r="7.5"/>
+        <circle cx="44" cy="46" r="7.5"/>
+        <path d="M25 40.5 L47 9.5 L43.2 20.5"/>
+        <path d="M39 40.5 L17 9.5 L20.8 20.5"/>
+      </g>
+      <circle cx="32" cy="29.8" r="2" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M5 3.5h3.2l1.6 4.3-2.1 1.4a11.5 11.5 0 0 0 7.1 7.1l1.4-2.1 4.3 1.6V19a1.9 1.9 0 0 1-2 1.9A16.4 16.4 0 0 1 3.1 5.5 1.9 1.9 0 0 1 5 3.5z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-6.5-6.1-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 14.9 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.3"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M4 16.5v-4l2-5h12l2 5v4z"/><path d="M4 12.5h16"/><circle cx="7.5" cy="16.5" r="1.8"/><circle cx="16.5" cy="16.5" r="1.8"/></g></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 9.5a13 13 0 0 1 18 0M6.2 13a8.5 8.5 0 0 1 11.6 0M9.4 16.4a4 4 0 0 1 5.2 0"/><circle cx="12" cy="19.3" r=".9" fill="currentColor"/></g></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h4"/></g></symbol>
+    <symbol id="i-elevator" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M12 3v18M7.5 10.5 9 8.5l1.5 2M13.5 13.5 15 15.5l1.5-2"/></g></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M3.5 8h4l1.6-2.5h5.8L16.5 8h4v11h-17z"/><circle cx="12" cy="13.3" r="3.4"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 3.2 2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 17l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z"/></symbol>
+    <symbol id="orn" viewBox="0 0 240 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+        <path d="M0 12h86M154 12h86"/>
+        <path d="M86 12c6 0 8-6 13-6s6 6 3 7.5-5-1-3-3"/>
+        <path d="M154 12c-6 0-8-6-13-6s-6 6-3 7.5 5-1 3-3"/>
+        <path d="M120 4.5 127.5 12 120 19.5 112.5 12z"/>
+      </g>
+      <circle cx="120" cy="12" r="1.8" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <a class="skip" href="#main" data-i18n="skip">본문 바로가기</a>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="header__inner wrap">
+      <a class="brand" href="#top" aria-label="P:K Men's Salon">
+        <svg class="brand__icon" aria-hidden="true"><use href="#i-scissors"/></svg>
+        <span class="brand__text">P:K <em>MEN'S SALON</em></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#about" data-i18n="nav_about">소개</a>
+        <a href="#services" data-i18n="nav_services">메뉴 · 가격</a>
+        <a href="#space" data-i18n="nav_space">공간</a>
+        <a href="#team" data-i18n="nav_team">바버</a>
+        <a href="#reviews" data-i18n="nav_reviews">후기</a>
+        <a href="#visit" data-i18n="nav_visit">오시는 길</a>
+
+        <div class="lang-mobile" role="group" aria-label="Language">
+          <button type="button" data-lang="ko" aria-pressed="true">KO</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+      </nav>
+
+      <div class="header__tools">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="ko" aria-pressed="true">KO</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+        <a class="btn btn--gold btn--sm header__cta" href="https://map.naver.com/p/entry/place/1630832588" target="_blank" rel="noopener" data-i18n="nav_book">예약하기</a>
+        <button class="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <figure class="hero__bg ph" aria-hidden="true">
+        <img src="images/hero.jpg" alt="" onerror="this.remove()">
+      </figure>
+      <div class="hero__shelves" aria-hidden="true"></div>
+
+      <div class="hero__inner wrap">
+        <a class="badge" href="#visit">
+          <span class="badge__dot"></span>
+          <span data-i18n="hero_badge">NEW LOCATION 2026 · 서해스카이팰리스 2층으로 이전</span>
+        </a>
+
+        <div class="logo" aria-hidden="true">
+          <svg class="logo__icon"><use href="#i-scissors"/></svg>
+          <div class="logo__word">P:K MEN'S SALON</div>
+          <div class="logo__hair">
+            <svg><use href="#orn"/></svg>
+            <span>HAIR</span>
+            <svg><use href="#orn"/></svg>
+          </div>
+        </div>
+
+        <h1 class="hero__title" id="hero-title" data-i18n="hero_title">위스키 바처럼 머무는,<br>클래식 바버샵</h1>
+        <p class="hero__sub" data-i18n="hero_sub">여주 천송동 남성 헤어 전문. 한 분 한 분에게 어울리는 스타일을 찾아드립니다. 100% 예약제.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="tel:031-8087-7756">
+            <svg aria-hidden="true"><use href="#i-phone"/></svg>
+            <span data-i18n="cta_call">전화 예약</span>
+          </a>
+          <a class="btn btn--ghost" href="https://map.naver.com/p/entry/place/1630832588" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-calendar"/></svg>
+            <span data-i18n="cta_book">네이버 예약</span>
+          </a>
+        </div>
+
+        <p class="status" data-status>
+          <span class="status__dot"></span>
+          <span class="status__text">10:00 – 20:30</span>
+        </p>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="Scroll"><span></span></a>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="wrap about__grid">
+        <div class="about__text reveal">
+          <p class="eyebrow" data-i18n="about_eyebrow">About</p>
+          <h2 class="h2" id="about-title" data-i18n="about_title">당신에게 어울리는 커트를 찾는 곳</h2>
+          <svg class="rule" aria-hidden="true"><use href="#orn"/></svg>
+          <p data-i18n="about_p1">피케이맨즈살롱은 2021년 여주에 문을 연 남성 전문 헤어샵입니다.</p>
+          <p data-i18n="about_p2">2026년 여름, 서해스카이팰리스 2층의 새 공간으로 이전했습니다.</p>
+
+          <dl class="stats">
+            <div><dt data-i18n="stat1_lbl">오픈</dt><dd>2021</dd></div>
+            <div><dt data-i18n="stat2_lbl">카카오맵 평점</dt><dd>5.0<svg aria-hidden="true"><use href="#i-star"/></svg></dd></div>
+            <div><dt data-i18n="stat3_lbl">예약제</dt><dd>100%</dd></div>
+          </dl>
+        </div>
+
+        <figure class="ph ph--tall about__photo reveal" data-file="images/about.jpg">
+          <img src="images/about.jpg" alt="" data-i18n-alt="g_stations" loading="lazy" onerror="this.remove()">
+          <figcaption data-i18n="g_stations">원목 경대</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="services_eyebrow">Menu</p>
+          <h2 class="h2" id="services-title" data-i18n="services_title">시술 메뉴 &amp; 가격</h2>
+          <svg class="rule" aria-hidden="true"><use href="#orn"/></svg>
+        </header>
+
+        <div class="menu">
+          <article class="menu__card reveal">
+            <h3 class="menu__cat">Cut</h3>
+            <ul class="menu__list">
+              <li>
+                <div class="menu__row"><span data-i18n="svc_cut">커트</span><i></i><b>23,000</b></div>
+                <p class="menu__note" data-i18n="svc_cut_note">상담 후 두상과 모질에 맞춘 커트</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="menu__card reveal">
+            <h3 class="menu__cat">Perm</h3>
+            <ul class="menu__list">
+              <li>
+                <div class="menu__row"><span data-i18n="svc_down">다운펌</span><i></i><b>40,000~</b></div>
+                <p class="menu__note" data-i18n="svc_down_note">부위별 추가 요금 발생</p>
+              </li>
+              <li>
+                <div class="menu__row"><span data-i18n="svc_perm">기본펌</span><i></i><b>80,000~</b></div>
+                <p class="menu__note" data-i18n="svc_perm_note">특수펌 · 다운펌 추가 시 비용 발생</p>
+              </li>
+            </ul>
+          </article>
+
+          <article class="menu__card reveal">
+            <h3 class="menu__cat">Clinic</h3>
+            <ul class="menu__list">
+              <li>
+                <div class="menu__row"><span data-i18n="svc_clinic">두피 클리닉</span><i></i><b>44,000~</b></div>
+                <p class="menu__note" data-i18n="svc_clinic_note">약제에 따라 추가 요금 발생</p>
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="styles reveal">
+          <h3 class="styles__title" data-i18n="styles_title">많이 찾는 스타일</h3>
+          <ul class="chips">
+            <li data-i18n="st_guile">가일컷</li>
+            <li data-i18n="st_creed">크리드컷</li>
+            <li data-i18n="st_pomade">포마드</li>
+            <li data-i18n="st_down">다운펌</li>
+            <li data-i18n="st_spa">헤어 스파</li>
+            <li data-i18n="st_kids">키즈 커트</li>
+          </ul>
+        </div>
+
+        <p class="fineprint reveal"><span data-i18n="price_unit">단위: 원 (KRW)</span> · <span data-i18n="price_note">가격은 2024년 매장 가격표 기준이며 변동될 수 있습니다.</span></p>
+      </div>
+    </section>
+
+    <!-- Space / gallery -->
+    <section class="section space" id="space" aria-labelledby="space-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="space_eyebrow">Space</p>
+          <h2 class="h2" id="space-title" data-i18n="space_title">새로운 공간</h2>
+          <svg class="rule" aria-hidden="true"><use href="#orn"/></svg>
+          <p class="section__sub" data-i18n="space_sub">여주서해스카이팰리스 2층 204호. 바버샵이자, 잠시 쉬어 가는 라운지.</p>
+        </header>
+
+        <div class="gallery">
+          <figure class="ph g--a reveal" data-file="images/bar.jpg">
+            <img src="images/bar.jpg" alt="" data-i18n-alt="g_bar" loading="lazy" onerror="this.remove()">
+            <figcaption data-i18n="g_bar">바 라운지</figcaption>
+          </figure>
+          <figure class="ph g--b reveal" data-file="images/stations.jpg">
+            <img src="images/stations.jpg" alt="" data-i18n-alt="g_stations" loading="lazy" onerror="this.remove()">
+            <figcaption data-i18n="g_stations">원목 경대</figcaption>
+          </figure>
+          <figure class="ph g--c reveal" data-file="images/lounge.jpg">
+            <img src="images/lounge.jpg" alt="" data-i18n-alt="g_lounge" loading="lazy" onerror="this.remove()">
+            <figcaption data-i18n="g_lounge">샹들리에 라운지</figcaption>
+          </figure>
+          <figure class="ph g--d reveal" data-file="images/door.jpg">
+            <img src="images/door.jpg" alt="" data-i18n-alt="g_door" loading="lazy" onerror="this.remove()">
+            <figcaption data-i18n="g_door">204호 입구</figcaption>
+          </figure>
+          <figure class="ph g--e reveal" data-file="images/facade.jpg">
+            <img src="images/facade.jpg" alt="" data-i18n-alt="g_facade" loading="lazy" onerror="this.remove()">
+            <figcaption data-i18n="g_facade">102동 외관</figcaption>
+          </figure>
+          <figure class="ph g--f reveal" data-file="images/products.jpg">
+            <img src="images/products.jpg" alt="" data-i18n-alt="g_products" loading="lazy" onerror="this.remove()">
+            <figcaption data-i18n="g_products">스타일링 제품</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section team" id="team" aria-labelledby="team-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="team_eyebrow">Barbers</p>
+          <h2 class="h2" id="team-title" data-i18n="team_title">바버</h2>
+          <svg class="rule" aria-hidden="true"><use href="#orn"/></svg>
+        </header>
+
+        <div class="team__grid">
+          <article class="barber reveal">
+            <figure class="ph ph--portrait" data-file="images/pio.jpg">
+              <img src="images/pio.jpg" alt="" data-i18n-alt="pio_name" loading="lazy" onerror="this.remove()">
+            </figure>
+            <div class="barber__body">
+              <p class="barber__role">Director · Barber</p>
+              <h3 class="barber__name" data-i18n="pio_name">피오 원장</h3>
+              <p data-i18n="pio_bio">호주 바버샵 출신. 모든 커트는 대화에서 시작합니다.</p>
+            </div>
+          </article>
+
+          <article class="barber reveal">
+            <figure class="ph ph--portrait" data-file="images/eunseong.jpg">
+              <img src="images/eunseong.jpg" alt="" data-i18n-alt="es_name" loading="lazy" onerror="this.remove()">
+            </figure>
+            <div class="barber__body">
+              <p class="barber__role">Manager · Stylist</p>
+              <h3 class="barber__name" data-i18n="es_name">은성 실장</h3>
+              <p data-i18n="es_bio">깔끔한 커트와 편안한 응대.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="fineprint reveal" data-i18n="team_note">예약 시 원하는 바버를 선택할 수 있어요.</p>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="reviews_eyebrow">Reviews</p>
+          <h2 class="h2" id="reviews-title" data-i18n="reviews_title">손님들의 이야기</h2>
+          <svg class="rule" aria-hidden="true"><use href="#orn"/></svg>
+        </header>
+
+        <div class="quotes">
+          <blockquote class="quote reveal"><p data-i18n="r1">여주에서 맞는 곳을 못 찾아 이천까지 다니다가, 여기서 정착했어요.</p></blockquote>
+          <blockquote class="quote reveal"><p data-i18n="r2">제게 어울리는 스타일을 먼저 찾아 주셔서 늘 만족해요.</p></blockquote>
+          <blockquote class="quote reveal"><p data-i18n="r3">들어서는 순간 외국 영화 속 바버샵에 온 느낌.</p></blockquote>
+          <blockquote class="quote reveal"><p data-i18n="r4">커트가 끝나면 바로 다음 예약부터 잡게 돼요.</p></blockquote>
+        </div>
+
+        <p class="fineprint reveal" data-i18n="reviews_src">네이버 블로그 방문 후기를 요약했습니다 · 카카오맵 평점 5.0</p>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="section visit" id="visit" aria-labelledby="visit-title">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow" data-i18n="visit_eyebrow">Visit</p>
+          <h2 class="h2" id="visit-title" data-i18n="visit_title">오시는 길</h2>
+          <svg class="rule" aria-hidden="true"><use href="#orn"/></svg>
+        </header>
+
+        <div class="visit__grid">
+          <div class="visit__info reveal">
+            <div class="info">
+              <svg class="info__icon" aria-hidden="true"><use href="#i-pin"/></svg>
+              <div>
+                <h3 data-i18n="addr_label">주소</h3>
+                <p data-i18n="addr_val">경기 여주시 여양로233번길 5-26<br>여주서해스카이팰리스 2층 204호 (천송동)</p>
+                <p class="info__hint" data-i18n="addr_hint">102동 엘리베이터를 타고 2층으로 올라오세요.</p>
+              </div>
+            </div>
+
+            <div class="info">
+              <svg class="info__icon" aria-hidden="true"><use href="#i-clock"/></svg>
+              <div>
+                <h3 data-i18n="hours_label">영업시간</h3>
+                <p data-i18n="hours_val">매일 10:00 – 20:30</p>
+                <p class="status status--inline" data-status>
+                  <span class="status__dot"></span>
+                  <span class="status__text">10:00 – 20:30</span>
+                </p>
+                <p class="info__hint" data-i18n="hours_hint">100% 예약제로 운영됩니다.</p>
+              </div>
+            </div>
+
+            <div class="info">
+              <svg class="info__icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              <div>
+                <h3 data-i18n="phone_label">전화</h3>
+                <p><a class="link" href="tel:031-8087-7756">031-8087-7756</a></p>
+              </div>
+            </div>
+
+            <ul class="amenities">
+              <li><svg aria-hidden="true"><use href="#i-car"/></svg><span data-i18n="amen_parking">무료 주차</span></li>
+              <li><svg aria-hidden="true"><use href="#i-wifi"/></svg><span data-i18n="amen_wifi">무선 인터넷</span></li>
+              <li><svg aria-hidden="true"><use href="#i-card"/></svg><span data-i18n="amen_card">여주사랑카드 가능</span></li>
+              <li><svg aria-hidden="true"><use href="#i-elevator"/></svg><span data-i18n="amen_elev">엘리베이터</span></li>
+            </ul>
+
+            <p class="moved" data-i18n="moved_note">2026년 여름, 여주 KCC스위첸 상가(강변북로 2)에서 이전했습니다.</p>
+          </div>
+
+          <div class="visit__map reveal">
+            <div class="map">
+              <iframe
+                title="Map"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=127.6433%2C37.2983%2C127.6553%2C37.3041&amp;layer=mapnik&amp;marker=37.301220%2C127.649287"
+                loading="lazy"
+                referrerpolicy="no-referrer"></iframe>
+            </div>
+            <p class="maps__label" data-i18n="maps_label">지도 앱에서 열기</p>
+            <div class="maps">
+              <a href="https://place.map.kakao.com/2036237131" target="_blank" rel="noopener">Kakao Map<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a href="https://map.naver.com/p/entry/place/1630832588" target="_blank" rel="noopener">Naver Map<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a href="https://maps.apple.com/place?address=567-5,%20Cheonsong-dong,%20Yeoju-si,%20Gyeonggi-do,%2012639%20South%20Korea&amp;coordinate=37.301220,127.649287&amp;name=%ED%94%BC%EC%BC%80%EC%9D%B4%EB%A7%A8%EC%A6%88%EC%82%B4%EB%A1%B1&amp;place-id=I2A3B0399BE155460" target="_blank" rel="noopener">Apple Maps<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=37.301220,127.649287" target="_blank" rel="noopener">Google Maps<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <svg class="footer__icon" aria-hidden="true"><use href="#i-scissors"/></svg>
+        <div>
+          <p class="footer__name">P:K MEN'S SALON</p>
+          <p class="footer__ko">피케이맨즈살롱 · Yeoju</p>
+        </div>
+      </div>
+      <p class="footer__contact">
+        <a class="link" href="tel:031-8087-7756">031-8087-7756</a><br>
+        <span data-i18n="hours_val">매일 10:00 – 20:30</span>
+      </p>
+      <p class="footer__note" data-i18n="footer_note">이 사이트는 학습용 프로젝트이며 피케이맨즈살롱의 공식 웹사이트가 아닙니다.</p>
+      <p class="footer__copy">© 2026 P:K MEN'S SALON</p>
+    </div>
+  </footer>
+
+  <!-- Mobile action bar -->
+  <div class="actionbar">
+    <a href="tel:031-8087-7756"><svg aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="bar_call">전화</span></a>
+    <a class="is-gold" href="https://map.naver.com/p/entry/place/1630832588" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-calendar"/></svg><span data-i18n="bar_book">예약</span></a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
